@@ -8,3 +8,5 @@ Sort Demo
 4. Use ``mvn clean install`` to build and run the Test cases and to install this repository in yours' local repository.
 5. Use ``mvn clean test`` to run Test cases.
 6. Use ``mvn spring-boot:run`` to execute the program.
+7. Enter total number of array.
+8. Enter numbers separated by spaces.
