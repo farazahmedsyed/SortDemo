@@ -10,9 +10,4 @@ class SortApplicationTests {
     void contextLoads() {
     }
 
-    @Test
-    void unitTest_sortOddThenEven_positiveInput_Success() {
-
-    }
-
 }
