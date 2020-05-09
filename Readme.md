@@ -1,6 +1,6 @@
 Sort Demo
 
-##Execution Steps
+## Execution Steps
 
 1. Install Java (preferably Java8), Setup JAVA_HOME environment variable.
 2. Install Maven, Setup MAVEN_HOME environment variable.
