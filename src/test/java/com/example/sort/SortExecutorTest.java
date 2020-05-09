@@ -1,5 +1,6 @@
 package com.example.sort;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
@@ -12,7 +13,7 @@ public class SortExecutorTest {
         String input = "5 \n 1 2 3 4 5";
         InputStream in = new ByteArrayInputStream(input.getBytes());
         System.setIn(in);
-        SortExecutor.execute();
+        Assertions.assertDoesNotThrow(() -> SortExecutor.execute());
     }
 
 }

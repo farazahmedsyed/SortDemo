@@ -8,7 +8,7 @@ import java.util.Arrays;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SortOddThenEven {
 
-    public static void execute(Integer arr[]) {
+    public static void execute(Integer[] arr) {
         if (arr == null || arr.length == 0) {
             return;
         }

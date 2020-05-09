@@ -20,13 +20,14 @@ public class UserInput {
 
         Integer[] numbers = new Integer[count];
         System.out.println("Enter numbers separated by space");
-        Scanner numScanner = new Scanner(s.nextLine());
-        for (int i = 0; i < count; i++) {
-            if (numScanner.hasNextInt()) {
-                numbers[i] = numScanner.nextInt();
-            } else {
-                System.out.println(ERROR_INVALID_NUMBER);
-                throw new IllegalArgumentException(ERROR_INVALID_NUMBER);
+        try(Scanner numScanner = new Scanner(s.nextLine())) {
+            for (int i = 0; i < count; i++) {
+                if (numScanner.hasNextInt()) {
+                    numbers[i] = numScanner.nextInt();
+                } else {
+                    System.out.println(ERROR_INVALID_NUMBER);
+                    throw new IllegalArgumentException(ERROR_INVALID_NUMBER);
+                }
             }
         }
 

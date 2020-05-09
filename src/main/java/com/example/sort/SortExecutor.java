@@ -11,7 +11,7 @@ public class SortExecutor {
 
     public static void execute() {
         try {
-            Integer arr[] = UserInput.readNumsFromCommandLine();
+            Integer[] arr = UserInput.readNumsFromCommandLine();
 
             SortOddThenEven.execute(arr);
 
