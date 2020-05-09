@@ -1,10 +1,11 @@
 package com.example.sort;
 
-import org.springframework.stereotype.Service;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.util.Arrays;
 
-@Service
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class SortOddThenEven {
 
     public static void execute(Integer arr[]) {

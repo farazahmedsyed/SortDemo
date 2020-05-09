@@ -1,7 +1,11 @@
 package com.example.sort;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import java.util.Scanner;
 
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserInput {
 
     public static final String ERROR_INVALID_NUMBER = "You didn't provide enough numbers";
